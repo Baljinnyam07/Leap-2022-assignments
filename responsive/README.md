@@ -1,3 +1,3 @@
-# Responsive design assignment project
+# Baljinnyam Jandav
 
-https://temuulennibno.github.io/assignment-responsive/
+## Team Green
