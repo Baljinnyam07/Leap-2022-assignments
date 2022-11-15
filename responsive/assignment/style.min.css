@@ -28,14 +28,15 @@ body {
 
 }
 
+
 @media only screen and (max-width:600px){
     .row article{
         width: 100%;
     }
-    nav>ul>li{
+    .nav ul li{
         display: none;
     }
-    header .ul .bars{
+    header .nav .bars{
         display: block;
     }
     
