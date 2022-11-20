@@ -1,0 +1,38 @@
+.bigbox{
+    position:absolute;
+    width: 700px;
+    height: 600px;
+    margin-left: 450px;
+    border: 2px solid black;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 10px;
+    box-shadow: -5px 5px 20px 5px #000;
+}
+
+.main-box{
+    position: relative;
+    float: right;
+    margin-top: 160px;
+    margin-right: 230px;
+    
+}
+.main-box1{
+    position: relative;
+    margin-top: 170px;
+    margin-left: 230px;
+
+}
+
+#box1:hover{
+   
+    
+    
+    margin-top: 0;
+    margin-right: 0;
+}
+

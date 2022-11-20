@@ -1,0 +1,22 @@
+body{
+    background-color: #ccc;
+}
+
+.main{
+    width: 100px;
+    display: flex;
+    background-color: #ccc;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-img img{
+    width: 12px;
+    background-color: white;
+}
+.main-box input{
+    width: 0px;
+    border: #ccc;
+}
+

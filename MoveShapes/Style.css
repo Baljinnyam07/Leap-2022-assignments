@@ -1,0 +1,77 @@
+#main {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto 10px;
+    border: 2px #aaa solid;
+    padding: 10px;
+  }
+
+  #main div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 140px;
+    left: 220px;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  #main div p {
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #box1 {
+    z-index: 10;
+    background-color: blue;
+    transition: all 1s ease-in-out;
+  }
+
+  #box2 {
+    z-index: 9;
+    background-color: green;
+    transition-property: top, left, background-color;
+    transition-duration: 1s, 1s, 1s;
+    transition-delay: 0s, 1s, 1s;
+  }
+
+  #box3 {
+    z-index: 8;
+    background-color: red;
+    transition-property: top, left, bottom, background-color;
+    transition-duration: 1s, 2s, 2s;
+    transition-delay: 0s, 1s, 5s 5s;
+  }
+
+  #main .text {
+    width: 500px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+  }
+
+  #main:hover #box1 {
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+  }
+
+  #main:hover #box2 {
+    top: 320px;
+    left: 420px;
+  }
+
+  #main:hover #box3{
+    left: 420px;
+    
+    bottom:10px;
+    top: 0px;
+    background-color: yellow;
+    transition: all 1s ease-in-out;
+    border-radius: 0px;
+    
+
+  }
