@@ -1,0 +1,25 @@
+button{
+    display: flex;
+}
+.box{
+    width:100px;
+    height: 100px;
+    background-color: blue;
+    transition: 0.5s all;
+
+}
+.box1{
+    width:100px;
+    height: 100px;
+    background-color: green;
+    transition: 0.5s all;
+}
+.box:active{
+    width:100%;
+    background-color: aqua;
+    
+}
+.box1:hover{
+    width: 100%;
+    background-color: red;
+}
