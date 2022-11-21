@@ -1,0 +1,26 @@
+.dd{
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid black;
+    width: 20%;
+    border-radius: 10px;
+}
+.dd1{
+    margin-left:10px ;
+    
+}
+.dd2{
+    margin-left:5px ;
+}
+.dd3{
+    margin-left: -5px;
+    
+}
+.dd4{
+    margin-left: 60px;
+}
+#dd5{
+    margin-left: 58px;
+    margin-top: -20px;
+}
+
