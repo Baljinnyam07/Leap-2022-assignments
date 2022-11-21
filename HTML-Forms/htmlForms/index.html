@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation forms 1</title>
+    
+</head>
+<body>
+    <div>
+        <h1>Travel reservation form</h1>
+        <h3>* denotes mandotory</h3>
+        <form>
+            <label for="">Full name* :</label><br>
+            <input type="text" name="Fullname" id="" placeholder="FirstName LastName" required><br>
+            <label for="">Email address* :</label><br>
+            <input type="email" name="email" id="" placeholder="EMAIL_ADDRESS" required><br>
+            <label>Select Tour Package* :</label><br>
+            <div>
+                <select name="package" id="" required>
+                    <option value="">None</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Goal">Goal</option>
+                    <option value="Goala">Goala</option>
+                </select>
+            </div>
+            <label for="">Arrival date* :</label><br>
+            <input type="date" name="arrivaldate" id="" placeholder="M/D/Y" required><br>
+            <label for="">Number of persons* :</label><br>
+            <input type="number" name="Number" id="" placeholder="UNKNOWN_TYPE" required><br>
+            <label for="">What would you want to avail? *</label><br>
+            
+            <div>
+                Boarding <input type="checkbox" name="checkbox1" required><br>
+                Fooding <input type="checkbox" name="checkbox1" ><br>
+                Sight seeing <input type="checkbox" name="checkbox1"><br>
+            </div>
+          
+            <label for="">Discount Coupon code :</label><br>
+            <input type="text" name="code" placeholder="UNKNOWN_TYPE"><br>
+            <label for="">Terms and conditions*</label><br>
+            <input type="radio" name="Terms" required>I agree 
+            <input type="radio" name="Terms" required>I disagree<br>
+            <button type="sumbit" value="sumbit">Complete reservation</button>
+
+        </form>
+    </div>
+
+
+    
+</body>
+</html>

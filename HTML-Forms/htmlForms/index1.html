@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation forms 2</title>
+    <style>
+        .container{
+            margin:0 auto;
+            max-width: 500px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .bb{
+            background-color: rgb(240, 250, 255);
+            border: 3px dashed brown;
+        }
+        .aa{
+            background-color: rgb(161, 19, 55);
+            color: white;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container">
+            <div class="aa">Welcome to the 24x7 Fitness Club : Courts Reservation Page!!</div>
+            <div class="bb">
+                <form action="">
+                    <fieldset>
+                        <legend>Member Demographics</legend>
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" name="name" id="" required><br>
+                        </div>
+                        <div class="fomr-group">
+                            <label for="">Are you a Member?</label><br>
+                            <input type="radio" id="member" value="member" required>
+                            <label for="member">Member</label>
+                            <input type="radio" id="member" value="non" required>
+                            <label for="nonmember">Non-member</label><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" name="mail" id="" required><br>
+                        </div>
+                    </fieldset>
+                        <div class="form-group">
+                            <label for="Facility">Facility</label>
+                            <select name="Facility" id="Facility" required>
+                              <option value="0">-- Select --</option>
+                              <option value="1">Badminton</option>
+                              <option value="2">Walk</option>
+                              <option value="3">Japan</option>
+                            </select>
+                        </div>
+                        <div class="fomr-group">
+                            <label for="Date">Select a reservation date and time</label><br>
+                            <input type="date" id="date" name="date" required>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="policy" name="policy" value="policy" required>
+                            <label for="policy"> I agree to the club's reservation policy</label><br>
+                        </div>
+                        <div>
+                            <button name="sumbit" id="btn">SUMBIT</button>
+                        </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
