@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="Style.Css">
+</head>
+<body>
+    <div class="main">
+        <form action="#"></form>
+            <div class="header">
+                <h1>Social media хэрэглэгчийн судалгаа</h1>
+                <p>Судалгаанд оролцсон таньд баярлалаа.</p>
+            </div>
+            <div class="main-main">
+                
+            <fieldset class="col-1">
+                <legend>Ерөнхий мэдээлэл</legend>
+                    <div class="dd">
+                        <div class="form-group">
+                            <label for="username">Нэр</label><br>
+                            <input type="text" id="username" name="username" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email">И-мэйл</label><br>
+                            <input type="email" id="email" name="email" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="age">Нас</label><br>
+                            <input type="number" id="age" name="age" min="14" max="99" required>
+                        </div><br>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Social media</legend>
+                    <div class="dd-1">
+                        <div class="form-group">
+                            <label for="time">Та өдөрт хэдэн цаг social media ашигладаг вэ</label><br>
+                        <select name="time" id="time">
+                        <optgroup label="Бага">
+                            <option value="time-1-1">10 - 30мин</option>
+                            <option value="time-1-2">30 - 1цаг</option>
+                        </optgroup>
+                        <optgroup label="Дунд">
+                            <option value="time-2-1">1 - 2цаг</option>
+                            <option value="time-2-2">2цаг</option>
+                        </optgroup>
+                        <optgroup label="Их">
+                            <option value="time-3-1">2-4цаг</option>
+                            <option value="time-3-1">4-12цаг</option>
+                        </optgroup>
+                        </select>
+                        </div><br>
+                    
+
+                        <div class="form-group">
+                            <p>Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн альныг илүүд үздэг вэ?</p>
+                            <input type="radio" id="online" name="buy">
+                            <label for="online">Онглайн худалдан авалт</label><br>
+                            <input type="radio" id="Shop"name="buy" >
+                            <label for="Shop">Дэлгүүр орж худалдан авалт хийх</label><br>
+                        </div><br>
+                        <div class="form-group">
+                            <p>Та ямар Social media platform ашигладаг вэ?</p>
+                            <input type="checkbox" id="fb">
+                            <label for="fb">Facebook</label><br>
+                            <input type="checkbox" id="insta">
+                            <label for="insta">Instagram</label><br>
+                            <input type="checkbox" id="tw">
+                            <label for="tw">Twitter</label><br>
+                            <input type="checkbox" id="Rt">
+                            <label for="Rt">Reddi</label><br>
+                            <input type="checkbox" id="St">
+                            <label for="St">Snapchat</label><br>
+                            <input type="checkbox" id="Qa">
+                            <label for="Qa">Quora</label><br>
+                            <input type="checkbox" id="Yt">
+                            <label for="Yt">Youtube</label><br>
+                            <input type="checkbox" id="Other">
+                            <label for="Other">Бусад</label><br>
+
+                        </div>
+                    </div>
+                    
+
+
+
+            </fieldset>
+            <div class="form-group">
+                <p>Санал хүсэлт</p>
+                <textarea name="" id="" cols="50"  rows="5" maxlength="300"  placeholder="Санал хүсэлтээ энд бичнэ үү..."></textarea>
+            </div class="form-group">
+            <button type="submit" name="sumbit" id="btn">SUMBIT</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
