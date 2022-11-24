@@ -1,0 +1,33 @@
+
+.bb{
+    position: relative;
+    width: 120px;
+    height: 40px;   
+    background-color: #ccc;
+}
+p{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+.cc{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    right:-5px;
+    top: -5px;
+    color: white;
+    transition-duration: 1s;
+}
+.bb:hover{
+    background-color: red;
+}
+.bb:hover .cc{
+    transform: translate(-40px,5px);
+    color: red;
+    z-index: -1;
+}
