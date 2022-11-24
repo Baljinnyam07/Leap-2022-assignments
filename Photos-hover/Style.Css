@@ -11,25 +11,23 @@ body{
 }
 .row{
     display: flex;
-    
     flex-wrap: wrap;
 }
 .col{
     width: calc(100%/3);
-    
-    
 }
+img{
+    height: 100%;
+}
+
 .col img{
     width: 100%;
     filter: grayscale(100%);
-    transition: .3s ease;
+    transition: filter 0.5s ease;
 }
-.col img:hover{
+.col img:right :hover{
     
-    filter: grayscale(0);
-    overflow: hidden;
-    
-   
-    
+    transform: matrix(5);
+    filter: grayscale(0%);
 }
 
