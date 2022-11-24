@@ -1,0 +1,46 @@
+body{
+    margin: 100px;
+    background-color: aqua;
+}
+.box{
+    
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.box-b{
+    display: none;
+}
+
+.box-t{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(189, 189, 189);
+    transition: background 0.5s;
+}
+
+.box-t::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); 
+    border-radius: 40px;
+    transition: transform 0.2s;
+}
+
+.box-b:checked ~ .box-t{
+    background: blue;
+}
+.box-b:checked ~ .box-t::after {
+    transform: translateX(40px);
+}
