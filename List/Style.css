@@ -1,0 +1,19 @@
+.box{
+    border: 1px solid black;
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    background-color: aqua;
+    padding: 50px;
+    transition: background-color 2s ease-out,font-size 3s ease-in, color 2s ease;
+}
+
+
+
+
+.box:hover{
+    background-color: brown;
+    font-size: 6rem;
+    cursor: pointer;
+    color: blueviolet;
+}
