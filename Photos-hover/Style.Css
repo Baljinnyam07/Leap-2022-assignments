@@ -20,14 +20,13 @@ img{
     height: 100%;
 }
 
+#imgQA::before{
+    filter: grayscale(500%);
+}
 .col img{
     width: 100%;
-    filter: grayscale(100%);
     transition: filter 0.5s ease;
 }
-.col img:right :hover{
-    
-    transform: matrix(5);
-    filter: grayscale(0%);
-}
+
+
 
