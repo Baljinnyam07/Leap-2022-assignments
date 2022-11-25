@@ -1,0 +1,117 @@
+#main {
+    position: relative;
+    display: flex;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto 10px;
+    border: 2px #aaa solid;
+    padding: 10px;
+  }
+#main div{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+#box1::before{
+    content: '';
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 140px;
+    left: 210px;
+    box-shadow: 0px 1px 30px 1px;
+}
+#box1::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 140px;
+    left: 210px;
+    background: rgba(255, 199, 199, 0.8);
+    backdrop-filter:blur(0.5px);
+    transition: all 1s ease-in-out;
+}
+#box2::before{
+    content: '';
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 140px;
+    left: 330px;
+    
+    box-shadow: 0px 1px 30px 1px;
+}
+#box2::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 140px;
+    left: 330px;
+    
+    background: rgba(255, 199, 199, 0.8);
+    backdrop-filter:blur(0.5px);
+    transition: all 1s ease-in-out;
+}
+#box3::before{
+    content: '';
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 255px;
+    left: 330px;
+    box-shadow: 0px 1px 30px 1px;
+}
+#box3::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 255px;
+    left: 330px;
+    background: rgba(255, 199, 199, 0.8);
+    backdrop-filter:blur(0.5px);
+    transition: all 1s ease-in-out;
+}
+#box4::before{
+    content: '';
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 255px;
+    left: 210px;
+    box-shadow: 0px 1px 30px 1px;
+}
+#box4::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 255px;
+    left: 210px;
+    background: rgba(255, 199, 199, 0.8);
+    backdrop-filter:blur(0.5px);
+    transition: all 1s ease-in-out;
+}
+
+#main:hover #box1::after{
+    top: 0px;
+    left: 0px;
+    background: rgba(253, 111, 111, 0.8);
+}
+#main:hover #box2::after{
+    top: 0px;
+    left: 520px;
+    background:  rgba(253, 111, 111, 0.8);
+}
+#main:hover #box3::after{
+    left: 520px;
+    top: 420px;
+    background:  rgba(253, 111, 111, 0.8);
+}
+#main:hover #box4::after{
+    top: 420px;
+    left: 0px;
+    background:  rgba(253, 111, 111, 0.8);
+}
