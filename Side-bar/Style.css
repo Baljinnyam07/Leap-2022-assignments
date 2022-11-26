@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    background-color: #ccc;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    background-color:black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    transition: all 1s;
+    filter: grayscale(100%);
+}
+
+i{
+    font-size: 2.5rem;
+}
+
+ .bar{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    background-color: lightgreen;
+    margin: 10px;
+    transition: all 1s;
+}
+
+.barr{
+    text-align: end;
+    margin-right: 10px;
+}
+
+
+.sidebar:hover{
+    width: 400px;
+    filter: grayscale(0);
+}
+
+.bar:hover{
+    font-size: 2rem;
+    background-color: #ccc;
+}
+
