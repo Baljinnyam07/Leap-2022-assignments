@@ -20,13 +20,15 @@ img{
 }
 
 .row div{
-    
+    transition-property: right, left, filter;
+    transition-duration: 1s, 1s, 1s;
+
     filter:grayscale(100%);
 }
 
 .row div:hover{
-    transform:translateX(100px);
-    filter: grayscale(0);
+    width: 120px
+    
 }
 
 
