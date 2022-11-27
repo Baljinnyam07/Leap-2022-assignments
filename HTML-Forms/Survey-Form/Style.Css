@@ -8,6 +8,14 @@ body{
     background-size: cover;
     
 }
+
+input:required:valid {
+    border: 3px solid forestgreen;
+  }
+  input:required:invalid:not(:placeholder-shown) {
+  
+    border: 3px solid  crimson;
+  }
 .header{
     
     text-align: center;
@@ -55,9 +63,4 @@ textarea{
     backdrop-filter:brightness(90%);
 }
 
-input:valid{
-    border: 4px solid green;
-}
-input:invalid{
-    border: 3px solid red;
-}
+
