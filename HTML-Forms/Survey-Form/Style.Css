@@ -27,6 +27,12 @@ input:required:valid {
     line-height: 1.5rem;
 }
 
+select{
+    width: 100%;
+    height: 1.6rem;
+    margin-bottom: 0;
+}
+
 .dd{
     padding: 20px;
 }
