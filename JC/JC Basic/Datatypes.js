@@ -1,10 +1,5 @@
-let number = "10";
-console.log(typeof 10);
-let message = "hi";
-console.log(typeof message);
-let nu = "true";
+console.log(typeof 42);
+console.log(typeof 'blubber');
 console.log(typeof true);
-let numb;
-console.log(typeof numb);
-let numberl="";
-console.log(typeof "");
+console.log(typeof undeclaredVariable);
+console.log(typeof null);
