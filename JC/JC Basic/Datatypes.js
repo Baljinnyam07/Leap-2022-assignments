@@ -1,0 +1,10 @@
+let number = "10";
+console.log(typeof(number));
+let message = "hi";
+console.log(typeof(message));
+let nu = "true";
+console.log(typeof(nu));
+let numb;
+console.log(typeof(numb));
+let numberl="";
+console.log(typeof(numberl));
