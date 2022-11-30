@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String & Number</title>
+  </head>
+  <body>
+    <script>
+      const string1 = "Hello I'm";
+      const string2 = "How are u";
+      const string3 = `String`;
+
+      const message =
+        string1 +
+        "\\ \b\b" +
+        " everyone" +
+        "\n " +
+        string2 +
+        " \t\t\t\t\t\t\t" +
+        string3;
+      console.log(message);
+
+      const message1 = `${string1} eveyone ${string2} ${string3}`;
+      console.log(message1);
+      console.log(string1.length);
+      console.log(string1.toUpperCase());
+      console.log("hello".toUpperCase());
+      const firsn = "Bold";
+      const fulln = `${firsn} Dawaa`;
+
+      const fullString = "JavaScript is programming language";
+      const substr = fullString.substr(0, 10);
+      const substr1 = fullString.substr(10, 15);
+      console.log(substr);
+      console.log(substr1);
+
+      const iof = "This is string"; //'Th string'
+      const index1 = iof.substr(0, iof.indexOf("is"));
+      const rest = iof.substring(iof.indexOf("is") + 3);
+      const index2 = rest.substr(iof.indexOf("is"));
+      const result = index1.concat("", index2);
+      console.log(result);
+
+      //   const prompt1 = window.prompt("Too oruulna uu!");
+      //   const prompt2 = window.prompt("Too oruulna uu!");
+      //   console.log(Number(prompt1) + Number(prompt2));
+
+      //   let a = 5,
+      //     b = 9;
+      //   const diff = Math.abs(a - b);
+      //   console.log(diff);
+
+      //   console.log(Math.floor(Math.random() * 3));
+      //   console.log(Math.floor(Math.random() * 3));
+      //   console.log(Math.floor(Math.random() * 3));
+      //   console.log(Math.floor(Math.random() * 4));
+
+      console.log(Math.floor(Math.random() * 50 * 1.2));
+    </script>
+  </body>
+</html>
