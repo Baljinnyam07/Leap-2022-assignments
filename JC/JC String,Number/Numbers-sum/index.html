@@ -8,9 +8,9 @@
   </head>
   <body>
     <script>
-      let n = 456;
+      let n = 432;
       console.log(
-        (n % 10) + ((n % 100) / 10).toFixed(0) + ((n % 100) / 100).toFixed(1)
+        (n % 10) + ((n % 100) - (n % 10)) / 10 + ((n % 1000) - (n % 100)) / 100
       );
     </script>
   </body>
