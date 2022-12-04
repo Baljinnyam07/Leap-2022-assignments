@@ -8,20 +8,19 @@
   </head>
   <body>
     <script>
-      const n = 5;
-      const a = 4;
-      let sum = "";
-      let sum1 = "";
-      let result = "";
-      let index = 0;
-      while (index <= a) {
-        sum += " * ";
-        sum1 += " * ";
-        index++;
-        result += sum + "\n" + "\n";
-      }
+      let n = 10;
+      let k = "";
+      for(let i = 1; i <=n; i++){
+        for(let j = 1; j<=n-i; j++){
+          k +=" ";
+        }
+        for (let p= 0; p < 2*i-1;p++ ){
+          k +="*";
 
-      console.log(result);
+        }
+        k +="\n";
+      }
+      console.log(k)
     </script>
   </body>
 </html>
