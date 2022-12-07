@@ -8,9 +8,16 @@
   </head>
   <body>
     <script>
-      const a = [2, 1, 6, 5, 8, 6];
-      a.pop();
-      console.log(a);
+      const arr = [2, 1, 6, 5, 8, 6];
+      const n = 6;
+      function removeArrayElement(list, digitToRemove) {
+        while (list.includes(digitToRemove)) {
+          const indexToRemove = list.indexOf(digitToRemove);
+          list.splice(indexToRemove, 1);
+        }
+      }
+      removeArrayElement(arr, n);
+      console.log(arr);
     </script>
   </body>
 </html>
