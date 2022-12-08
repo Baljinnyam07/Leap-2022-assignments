@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const student = {
+      //     lastname: "Odgerel",
+      //     firstname: "Sed-Erdene",
+      //     age: 17,
+      //     hobby: ["video games", "watching streams", "anime", "panda"],
+      //   };
+
+      //   console.log(
+      //     `${student.lastname} овогтой ${student.firstname} нь ${student.age} настай`
+      //   );
+
+      //   const student = studentCopy;
+      //   studentCopy = 19;
+      //   console.log(studentCopy);
+
+      const data = [
+        {
+          gender: "M",
+          firstName: "Dorj",
+          lastName: "Bat ",
+          point: 60,
+          age: 19,
+        },
+        {
+          gender: "F",
+          firstName: "Chuluu",
+          lastName: "Dorj ",
+          point: 85,
+          age: 25,
+        },
+        {
+          gender: "F",
+          firstName: "Ganaa",
+          lastName: "Sanjaa ",
+          point: 45,
+          age: 21,
+        },
+        {
+          gender: "M",
+          firstName: "Tulgaa",
+          lastName: "Boldoo ",
+          point: 80,
+          age: 76,
+        },
+        {
+          gender: "M",
+          firstName: "Huyagaa",
+          lastName: "Hvslen ",
+          point: 90,
+          age: 34,
+        },
+        {
+          gender: "F",
+          firstName: "Ariunaa",
+          lastName: "Naraa",
+          point: 70,
+          age: 12,
+        },
+        {
+          gender: "F",
+          firstName: "Saruul",
+          lastName: "Saraa ",
+          point: 78,
+          age: 43,
+        },
+        {
+          gender: "M",
+          firstName: "Namuun",
+          lastName: "Nawchaa",
+          point: 60,
+          age: 52,
+        },
+        {
+          gender: "F",
+          firstName: "Tuya",
+          lastName: "Tsetsgee",
+          point: 78,
+          age: 63,
+        },
+        {
+          gender: "F",
+          firstName: "Sengee",
+          lastName: "Sarnai",
+          point: 94,
+          age: 34,
+        },
+      ];
+
+      //   Hviseer
+      function getCountByGender(list, gender) {
+        let count = 0;
+        for (let i = 0; i < list.length; i++) {
+          if (list[i].gender === gender) {
+            count++;
+          }
+        }
+        return count;
+      }
+
+      const femaleCount = getCountByGender(data, "F");
+      const maleCount = getCountByGender(data, "M");
+
+      console.log(`Niit ${femaleCount} emegtei ${maleCount}`);
+
+      //   Nasaar
+
+      function getCountByFieldValueRange(list, key, min, max) {
+        let count = 0;
+        for (let i = 0; i < list.length; i++) {
+          if (list[i][key] >= min && list[i][key] < max) {
+            count++;
+          }
+        }
+        return count;
+      }
+
+      const childrenCount = getCountByFieldValueRange(data, "age", 0, 18);
+      const youth = getCountByFieldValueRange(data, "age", 18, 30);
+      const adult = getCountByFieldValueRange(data, "age", 30, 55);
+      const elder = getCountByFieldValueRange(data, "age", 55, 200);
+
+      console.log(
+        `Niit ${childrenCount} huuhed, ${youth} zaluus, ${adult} dundaj nas, ${elder} ahmad nasnii humuus bna.`
+      );
+
+      //   Dvngeer
+
+      const totalA = getCountByFieldValueRange(data, "point", 90, 101);
+      const totalB = getCountByFieldValueRange(data, "point", 80, 89);
+      const totalC = getCountByFieldValueRange(data, "point", 70, 79);
+      const totalD = getCountByFieldValueRange(data, "point", 60, 69);
+      const totalF = getCountByFieldValueRange(data, "point", 0, 59);
+
+      console.log(
+        `Hangalttai sain awsan hunii too ${totalA}, sain awsan hunii too ${totalB}, dund awsan hunii too ${totalC}, muu awsan hunii too ${totalD}, shalgaltand unasan hunii too ${totalF}`
+      );
+    </script>
+  </body>
+</html>

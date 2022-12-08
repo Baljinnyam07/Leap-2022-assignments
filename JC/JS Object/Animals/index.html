@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let animals = [
+        { type: "dog", sound: "woof" },
+        { type: "cow", sound: "moo" },
+        { type: "cat", sound: "meow" },
+      ];
+
+      function getCountByGender(list, amitan) {
+        let count = 0;
+        for (let i = 0; i < list.length; i++) {
+          if (list[i].type === amitan) {
+            count++;
+          }
+        }
+        return amitan;
+      }
+
+      const nohoi = getCountByGender(animals, "woof");
+      const cow = getCountByGender(animals, "moo");
+      const cat = getCountByGender(animals, "meow");
+      console.log(
+        `What does the ${animals[0].type} say? ${nohoi} ${nohoi} ${nohoi}`
+      );
+      console.log(`What does the ${animals[1].type} say? ${cow} ${cow} ${cow}`);
+      console.log(`What does the ${animals[2].type} say? ${cat} ${cat} ${cat}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let students = [
+        {
+          name: "Сэд-Эрдэнэ",
+          age: 19,
+          gender: "male",
+        },
+        {
+          name: "Индра",
+          age: 19,
+          gender: "female",
+        },
+        {
+          name: "Хатнаа ",
+          age: 21,
+          gender: "male",
+        },
+        {
+          name: "Тэмүүлэн",
+          age: 24,
+          gender: "male",
+        },
+        {
+          name: "Намуун",
+          age: 23,
+          gender: "female",
+        },
+      ];
+      function getCountByGender(list, gender) {
+        let count = 0;
+        for (let i = 0; i < list.length; i++) {
+          if (list[i].gender === gender) {
+            count++;
+          }
+        }
+        return count;
+      }
+
+      const femaleCount = getCountByGender(students, "female");
+      const maleCount = getCountByGender(students, "male");
+
+      console.log(`Niit ${femaleCount} emegtei ${maleCount}`);
+
+      function aveStudentsAge(list, age) {
+        let count = 0;
+        for (let i = 0; i < list.length; i++) {
+          count += list[i].age / list.length;
+        }
+      }
+      const aveAge = aveStudentsAge(students, "age");
+      const ovog = student;
+      ovog = {
+        ovog: Bataa,
+      };
+
+      console.log(`${aveAge}`);
+    </script>
+  </body>
+</html>
