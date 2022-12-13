@@ -17,12 +17,38 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  width: 210px;
+  width: 350px;
+  margin-bottom: 200px;
 }
 
 li {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 5px;
   background-color: #fff;
+}
+
+.game-over-screen {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -100vh;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.5s all;
+}
+
+.game-over-screen.active {
+  top: 0;
+}
+
+#gameOverTarget {
+  color: lime;
 }
