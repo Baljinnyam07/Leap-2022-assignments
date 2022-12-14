@@ -1,0 +1,89 @@
+:root {
+  --height: 500vh;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#2980b9, #6dd5fa, #ffffff);
+}
+
+main {
+  min-height: var(--height);
+
+  position: relative;
+}
+
+.grass {
+  height: 150px;
+  background-image: url(../game/img/image_2.jpeg);
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.ladder {
+  height: calc(var(--height) - 150px);
+
+  background-image: url(../game/img/unnamed.png);
+  background-size: contain;
+  width: 150px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 72px;
+  text-align: right;
+}
+
+.progress-bar {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 5px;
+  background-color: rgba(0, 0, 0.3);
+}
+
+.progress-bar-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: purple;
+  width: 0;
+}
+
+.run-box {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 150px;
+  bottom: 90px;
+  overflow: hidden;
+}
+
+.run-box img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: 0.3, all;
+}
+
+.run-box.active {
+  right: 100%;
+}
