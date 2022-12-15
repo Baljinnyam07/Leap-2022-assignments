@@ -1,83 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <ul id="aimagNames">
+      <li id="aimag-101">Архангай</li>
 
-        <li id="aimag-101">Архангай</li>
-    
-        <li id="aimag-202">Баян-Өлгий</li>
-    
-        <li id="aimag-103">Баянхонгор</li>
-    
-        <li id="aimag-104">Булган</li>
-    
-        <li id="aimag-205">Говь-Алтай</li>
-    
-        <li id="aimag-406">Говьсүмбэр</li>
-    
-        <li id="aimag-407">Дархан-Уул</li>
-    
-        <li id="aimag-408">Дорноговь</li>
-    
-        <li id="aimag-309">Дорнод</li>
-    
-        <li id="aimag-410">Дундговь</li>
-    
-        <li id="aimag-211">Завхан</li>
-    
-        <li id="aimag-112">Орхон</li>
-    
-        <li id="aimag-113">Өвөрхангай</li>
-    
-        <li id="aimag-414">Өмнөговь</li>
-    
-        <li id="aimag-315">Сүхбаатар</li>
-    
-        <li id="aimag-416">Сэлэнгэ</li>
-    
-        <li id="aimag-417">Төв</li>
-    
-        <li id="aimag-218">Увс</li>
-    
-        <li id="aimag-219">Ховд</li>
-    
-        <li id="aimag-120">Хөвсгөл</li>
-    
-        <li id="aimag-321">Хэнтий</li>
-    
-        <li id="aimag-522">Улаанбаатар</li>
-    
-      </ul>
-      <script>
-          const listOne = document.getElementById("aimagNames").getElementsByTagName("li")[0];
-          const listLast = document.getElementById("aimagNames").getElementsByTagName("li")[21];
-          const lii = document.getElementById("aimagNames").getElementsByTagName("li");
-          const stylo = document.getElementById("aimagNames")
-          const styloo = document.querySelectorAll('#aimagNames li')
-            
-            stylo.style.listStyle = "none";
-            stylo.style.padding = "50px";
-            for (let i = 0; i < styloo.length; i++) {
-                styloo[i].style.fontSize = '1.5rem';
-                styloo[i].style.padding = '5px';
-                styloo[i].style.margin  = '10px';
-                styloo[i].style.border = "thick solid #0000FF";
-                }
-            
-            if( styloo[i][6]=j){
-                styloo.style.backgroundColor = 'red';
-                j++
-            }
-            
-          console.log(listOne);
-          console.log(listLast);
-          console.log(document.getElementById("aimagNames").querySelector("#aimag-315"));
-      </script>
-</body>
+      <li id="aimag-202">Баян-Өлгий</li>
+
+      <li id="aimag-103">Баянхонгор</li>
+
+      <li id="aimag-104">Булган</li>
+
+      <li id="aimag-205">Говь-Алтай</li>
+
+      <li id="aimag-406">Говьсүмбэр</li>
+
+      <li id="aimag-407">Дархан-Уул</li>
+
+      <li id="aimag-408">Дорноговь</li>
+
+      <li id="aimag-309">Дорнод</li>
+
+      <li id="aimag-410">Дундговь</li>
+
+      <li id="aimag-211">Завхан</li>
+
+      <li id="aimag-112">Орхон</li>
+
+      <li id="aimag-113">Өвөрхангай</li>
+
+      <li id="aimag-414">Өмнөговь</li>
+
+      <li id="aimag-315">Сүхбаатар</li>
+
+      <li id="aimag-416">Сэлэнгэ</li>
+
+      <li id="aimag-417">Төв</li>
+
+      <li id="aimag-218">Увс</li>
+
+      <li id="aimag-219">Ховд</li>
+
+      <li id="aimag-120">Хөвсгөл</li>
+
+      <li id="aimag-321">Хэнтий</li>
+
+      <li id="aimag-522">Улаанбаатар</li>
+    </ul>
+    <script>
+      const listOne = document
+        .getElementById("aimagNames")
+        .getElementsByTagName("li")[0].innerText;
+      const listLast = document
+        .getElementById("aimagNames")
+        .getElementsByTagName("li")[21].innerText;
+      const lii = document
+        .getElementById("aimagNames")
+        .getElementsByTagName("li");
+      const stylo = document.getElementById("aimagNames");
+      const styloo = document.querySelectorAll("#aimagNames li");
+
+      stylo.style.listStyle = "none";
+      stylo.style.padding = "50px";
+      for (let i = 0; i < styloo.length; i++) {
+        styloo[i].style.fontSize = "1.5rem";
+        styloo[i].style.padding = "5px";
+        styloo[i].style.margin = "10px";
+        styloo[i].style.border = "thick solid #0000FF";
+      }
+
+      const hangai = document.querySelector("#aimagNames");
+      const hangainbus = document.querySelectorAll("li");
+
+      for (let i = 0; i < hangainbus.length; i++) {
+        switch (hangainbus[i].id[6]) {
+          case "1":
+            hangainbus[i].style.backgroundColor = "pink";
+            break;
+          case "2":
+            hangainbus[i].style.background = "red";
+            break;
+          case "3":
+            hangainbus[i].style.background = "yellow";
+            break;
+          case "4":
+            hangainbus[i].style.background = "green";
+            break;
+          case "5":
+            hangainbus[i].style.background = "blue";
+            break;
+        }
+      }
+
+      console.log(listOne);
+      console.log(listLast);
+      console.log(
+        document.getElementById("aimagNames").querySelector("#aimag-315")
+          .innerText
+      );
+    </script>
+  </body>
 </html>
