@@ -1,37 +1,26 @@
 const TIMER = 10;
 let MILLISECONDS = 0;
-let SECONDS = TIMER;
+let seconds = 00;
+let minutes = 00;
+
 
 const timerTarget = document.querySelector("h5");
-
-
-function updateTimer(){
-    if(MILLISECONDS >= 0){
-        SECONDS +;
-        MILLISECONDS = 0;
-    }
-    MILLISECONDS += 10;
-
-if(MILLISECONDS <=0 && SECONDS <= 0){
-    clearInterval(countDown);
-    gameOver();
+let count = 00;
+function updateTimer() {
+  count++;
+  MILLISECONDS++;
+  if (MILLISECONDS == 100) {
+    seconds++;
+    MILLISECONDS = 0;
+  }
+  if (seconds == 60) {
+    minutes++;
+    seconds = 0;
+  }
+  if (minutes == 60) {
+    
+    minutes = 0;
+  }
+  timerTarget.innerHTML = `${minutes}:${seconds}:${MILLISECONDS}`;
 }
-
-    let timerResult = '';
-    if(SECONDS => 60){
-        timerResult+= "0";
-    }
-    timerResult+=SECONDS;
-    timerResult+=":";
-    if(MILLISECONDS = 100){
-        timerResult + "0";
-    }
-    if(MILLISECONDS = 10){
-        timerResult + "0";
-    }
-
-    timerResult += MILLISECONDS;
-    timerTarget.innerHTML = timerResult;
-}
-
-const  countDown = setInterval(updateTimer,9)
+const countDown = setInterval(updateTimer, 10);
