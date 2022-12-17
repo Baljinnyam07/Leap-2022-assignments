@@ -8,16 +8,16 @@
   </head>
   <body>
     <script>
-      let n = window.prompt("Утасны дугаараа оруулан уу?");
-      const t = Number(n);
-      if (t.toString(0,4) = +976) {
-          console.log('bar')
-      }else console.log('zow')
-      //   console.log(t);
-      //   if ((n) {
-      //     console.log("Дугаараа зөв орууллаа");
-      //   } else console.log(window.prompt("Зөв утасны дугаар оруулан уу", "+976"));
-      //
+      let n = prompt('Utasnii dugaaraa oruulna uu');
+      let b = Number(n.substring(4,8));
+      if (n.substr(0,4) === "+976" && n.length === 12){
+        console.log("та монгол улсын утасны дугаарыг зөв орууллаа")
+      }else {
+        console.log("та монгол улсын утасны дугаарыг буруу орууллаа")
+      }
+
+      
+      
     </script>
   </body>
 </html>
