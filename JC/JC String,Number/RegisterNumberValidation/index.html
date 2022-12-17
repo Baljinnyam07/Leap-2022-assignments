@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt()
+        let b = Number(n.substring(3, 9))
+        if(n.length === 10){
+            if(n.substring(0,1) === String(n.substring(0,1))){
+                if(Number(n.substring(3, 9)) ===  b){
+                    console.log("та монгол улсын регистрийн дугаарыг зөв орууллаа")
+                }else console.log("та монгол улсын иргэний бүртгэлийн дугаарыг буруу орууллаа 3")
+
+            }else console.log("та монгол улсын иргэний бүртгэлийн дугаарыг буруу орууллаа 2")
+        }else console.log("та монгол улсын иргэний бүртгэлийн дугаарыг буруу орууллаа 1")
+
+
+    </script>
+</body>
+</html>
