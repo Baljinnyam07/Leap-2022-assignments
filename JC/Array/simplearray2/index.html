@@ -9,7 +9,37 @@
 <body>
     <script>
         const itCompanies = ['Facebook', "Google", "Microsoft", "Apple", "IBM","Oracle", "Amazon"];
+        let firstComapnies= [];
+        let i = 0
+        while(i<3){
+            firstComapnies += " " + itCompanies[i];
+            i++
+        }
+        let lastComapnies= [ ];
+        let j = 6;
+        while(j>3){
+            lastComapnies += " " + itCompanies[j];
+            j--
+        }
+        let middleCompany=itCompanies[3]
+
+
+        let companies = [];
+        for(i = 1; i<itCompanies.length; i++){
+                companies += " " + itCompanies[i]
+        }
+
+        let companiess = [];
+        for(i = 5; i>=0; i--){
+                companiess += " " + itCompanies[i]
+        }
+
         
+        console.log(`${firstComapnies}`)
+        console.log(`${lastComapnies}`)
+        console.log(`${" " + middleCompany}`)
+        console.log(`${companies}`)
+        console.log(`${companiess}`)
     </script>
 </body>
 </html>
