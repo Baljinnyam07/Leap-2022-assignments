@@ -17,14 +17,22 @@ function getTile(value){
     tileBack.classList.add('back');
     tile.appendChild(tileBack);
     tile.addEventListener('click', function(){
-        if(tile){
-             tile.classList.add('active')
-            flippedItems.push(tile)
-        }
-        console.log(flippedItems)
+        tile.classList.add('active');
+        flippedItems.push(tile);
 
-        if(flippedItems.length >= 2){ 
-             flippedItems[2].classList.remove('active')
+        if(flippedItems.length >= 2){
+            if(flippedItems[0].getAttribute("val") === flippedItems[1].getAttribute("val")){
+                flippedItems[0].classList.add('found');
+                flippedItems[1].classList.add("found");
+                flip = [];
+            }else {
+                setTimeout (() => {
+                    for(let i = 0; i < flippedItems.length; i ++){
+                        flippedItems[i].classList.remove('active')
+                        flippedItems = [];
+                    }
+                }, 1000)
+            }
         }
         
     })
