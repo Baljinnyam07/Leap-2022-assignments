@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const value = [4, 2, 34, 4, 1, 12, 1, 4];
+        let duplicate = []
+        for (i = 0; i < value.length; i++){
+            for(j = i + 1 ; j < value.length - 1; j++){
+                if(value[i] === value[j]){
+                duplicate += value[j] + " "
+            }
+            }
+        }
+        console.log(`${duplicate}`)
+    </script>
+</body>
+</html>
