@@ -11,30 +11,73 @@
       let students = [
         {
           name: "Сэд-Эрдэнэ",
-          birthOfYear: 19,
-          gender: "",
+          birthOfYear: 1999,
+          hobby: "морь",
+          single: "false",
         },
         {
           name: "Индра",
-          birthOfYear: 19,
-          gender: "female",
+          birthOfYear: 1998,
+          single: "false",
+          hobby: "машин",
         },
         {
           name: "Хатнаа ",
-          birthOfYear: 21,
-          gender: "male",
+          birthOfYear: 2005,
+          single: "true",
+          hobby: "тоглоом",
         },
         {
           name: "Тэмүүлэн",
-          birthOfYear: 24,
-          gender: "male",
+          birthOfYear: 2002,
+          single: "false",
+          hobby: "алхах",
         },
         {
           name: "Намуун",
-          birthOfYear: 23,
-          gender: "female",
+          birthOfYear: 1990,
+          single: "true",
+          hobby: "идэх",
         },
       ];
+
+      let x = function (age){
+        let count = "";
+        for(i=0; i < students.length; i++){
+          if((2022 - age[i].birthOfYear) > 20){
+            count += age[i].name + '\n';
+          }
+        }
+        return count;
+      }
+      let y = x(students);
+      console.log(y)
+
+
+      let a = function(realAge){
+        let count = "";
+        for(i=0; i < students.length; i++){
+          count += (2022 - realAge[i].birthOfYear) + '\n';          
+        }
+        return count;
+      }
+
+      let b = a(students);
+      console.log(b)
+
+      let c = function(studentsGender){
+        let count = "";
+        for(i = 0; i < students.length; i++){
+          if(studentsGender[i].single === 'false'){
+            count += studentsGender[i].name + '\n'
+          }
+        }
+        return count;
+      }
+
+      let f = c(students);
+      console.log(f)
+      
     </script>
   </body>
 </html>
