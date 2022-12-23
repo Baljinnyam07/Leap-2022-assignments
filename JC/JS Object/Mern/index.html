@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = [
+{
+    name:   'Alex',
+    email: 'alex@alex.com',
+    skills: ['HTML', 'CSS', 'JavaScript'],
+    age: 45,
+    isLoggedIn: false,
+    points: 30
+  },
+{
+    name:   'Job',
+    email: 'job@job.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+    age: 25,
+    isLoggedIn: false,
+    points: 50
+  },
+{
+    name:   'Brook',
+    email: 'daniel@daniel.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+    age: 39,
+    isLoggedIn: true,
+    points: 50
+  },
+{
+    name:   'Daniel',
+    email: 'daniel@alex.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+    age: 25,
+    isLoggedIn: false,
+    points: 56
+  },
+{
+    name:   'John',
+    email: 'john@john.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+    age: 20,
+    isLoggedIn: true,
+    points: 50
+  },
+{
+    name:   'Thomas',
+    email: 'thomas@thomas.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    age: 18,
+    isLoggedIn: false,
+    points: 55
+  },
+{
+    name:    'Paul',
+    email: 'paul@paul.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+    age: 25,
+    isLoggedIn: false,
+    points: 55
+  }
+]
+
+        console.log(users[0])
+
+        function mostSkill(skill){
+            let count = "";
+            for(i=0; i < users.length; i++){
+                for(j = 6; j < users.length; j++){
+                    if(skill[i].skills.length > skill[j].skills.length){
+                        count+= skill[i].name + '\n';
+                    }
+                }
+            }
+            return count;
+        }
+
+        const x = mostSkill(users)
+        console.log(x);
+
+
+        function logA(LogP){
+            let dun = 0;
+            let count = 0;
+            for(i=0; i < users.length;i++){
+                if(LogP[i].isLoggedIn === true){
+                    count ++;
+                }
+                if(LogP[i].points > 50){
+                    dun ++;
+                }
+                
+            }
+            console.log("50-аас дээш оноо авсан хэрэглэгч" + " " + dun);
+            return count;
+        }
+
+        let y = logA(users);
+        console.log('Нэвтэрсэн хэрэглэгчдийг тоо' + " " +y)
+
+        for(i=0 ; i < users.length; i++){
+            for(j=0; j < users.length; j++){
+                if(users[i].skills[j] === 'MongoDB'&& "Express" && "React" && 'Node'){
+                console.log("хөгжүүлэгч хүмүүс бол" + " " + users[i].name)
+            }
+            }
+        }
+
+
+        function mostAge(ages){
+            let count = "";
+            for(i=0; i < users.length; i++){
+                for(j = 6; j < users.length; j++){
+                    if(ages[i].age > ages[j].age){
+                        count+= ages[i].name + '\n';
+                    }
+                }
+            }
+            return count;
+        }
+
+        const c = mostAge(users)
+        console.log(c);
+        
+
+    </script>
+</body>
+</html>
