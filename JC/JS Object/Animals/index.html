@@ -14,24 +14,20 @@
         { type: "cat", sound: "meow" },
       ];
 
-      function getCountByGender(list, amitan) {
-        let count = 0;
-        for (let i = 0; i < list.length; i++) {
-          if (list[i].type === amitan) {
-            count++;
-          }
+      
+        function say(animal){
+          for(i = 0; i < animals.length; i++){
+            if(animals[i].type === animal){
+              console.log(`What does the ${animals[i].type} say? ${animals[i].sound} - ${animals[i].sound} - ${animals[i].sound}`)
+            }
         }
-        return amitan;
-      }
+        }
 
-      const nohoi = getCountByGender(animals, "woof");
-      const cow = getCountByGender(animals, "moo");
-      const cat = getCountByGender(animals, "meow");
-      console.log(
-        `What does the ${animals[0].type} say? ${nohoi} ${nohoi} ${nohoi}`
-      );
-      console.log(`What does the ${animals[1].type} say? ${cow} ${cow} ${cow}`);
-      console.log(`What does the ${animals[2].type} say? ${cat} ${cat} ${cat}`);
+        x = say('dog');
+        x = say('cow');
+        x = say('cat');
+
+      
     </script>
   </body>
 </html>
