@@ -26,7 +26,7 @@
         },
         {
           name: "Тэмүүлэн",
-          age: 24,
+          age: 23,
           gender: "male",
         },
         {
@@ -50,19 +50,47 @@
 
       console.log(`Niit ${femaleCount} emegtei ${maleCount}`);
 
-      function aveStudentsAge(list, age) {
+      function aveAge(ages){
         let count = 0;
-        for (let i = 0; i < list.length; i++) {
-          count += list[i].age / list.length;
+        for(i = 0; i < students.length; i++){
+          count += ages[i].age;
+        }
+        return count/students.length;
+      }
+
+      let Average = aveAge(students);
+      console.log(Average)
+
+
+      function names(lname){
+        for(i = 0; i < students.length; i++){
+          lname[i].Lastname = "";
         }
       }
-      const aveAge = aveStudentsAge(students, "age");
-      const ovog = student;
-      ovog = {
-        ovog: Bataa,
-      };
 
-      console.log(`${aveAge}`);
+      const lastnames = names(students)
+
+      console.log(students)
+
+
+      function sameAge(sAges){
+        let newArr = [];
+        for(i = 0; i < students.length; i++){
+          for(j = i + 1 ; j < students.length; j++){
+            if(sAges[i].age === sAges[j].age){
+              
+              newArr += sAges[i].age +" ";
+              
+            }
+            
+          }
+        }
+        return newArr
+      }
+
+      const smAge = sameAge(students);
+      console.log(smAge)
+
     </script>
   </body>
 </html>
