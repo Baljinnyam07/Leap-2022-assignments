@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const data = [
+         {productName:"Bakery", unitPrice:5000, amount: 200, totalPrice: 500000,  casherId:1, date: '2022-11-01'},
+         {productName:"Bread", unitPrice:9000, amount: 18, totalPrice: 54.000, casherId:1, date: '2022-11-01'},
+         {productName:"Milk", unitPrice:320, amount: 20, totalPrice: 23.000, casherId:2, date: '2022-11-01'},
+         {productName:"Eggs", unitPrice:30, amount: 50, totalPrice: 34.000, casherId:3, date: '2022-11-01'},
+         {productName:"Cheese", unitPrice:100, amount: 150, totalPrice: 414.000, casherId:14, date: '2022-11-01'},
+         {productName:"Cereal", unitPrice:330, amount: 130, totalPrice: 541.000, casherId:2, date: '2022-11-01'},
+         {productName:"Beans", unitPrice:10, amount: 130, totalPrice: 5431.000, casherId:4, date: '2022-11-01'},
+         {productName:"Fish", unitPrice:300, amount: 80, totalPrice: 5641.000, casherId:7, date: '2022-11-01'},
+         {productName:"Chiken", unitPrice:600, amount: 12, totalPrice: 1343.000, casherId:3, date: '2022-11-01'},
+         {productName:"Apple", unitPrice:5, amount: 134, totalPrice: 5.000, casherId:6, date: '2022-11-01'},
+         {productName:"Oranges", unitPrice:2, amount: 100, totalPrice: 14.000, casherId:3, date: '2022-11-01'},
+         {productName:"Bananas", unitPrice:10, amount: 312, totalPrice: 4134.000, casherId:5, date: '2022-11-01'},
+         {productName:"DishWashir", unitPrice:1500, amount: 438, totalPrice: 541.000, casherId:1, date: '2022-11-01'},
+         {productName:"Tv", unitPrice:50000, amount: 180, totalPrice: 5441.000, casherId:1, date: '2022-11-01'},
+         {productName:"Disk", unitPrice:3200, amount: 183, totalPrice:4144.000, casherId:1, date: '2022-11-01'},
+         {productName:"Flash", unitPrice:100, amount: 113, totalPrice: 1443.000, casherId:9, date: '2022-11-01'},
+         {productName:"HardDisk", unitPrice:15700, amount: 7, totalPrice: 54141.000, casherId:7, date: '2022-11-01'},
+         {productName:"Computer", unitPrice:115000, amount: 5, totalPrice: 4143.000, casherId:5, date: '2022-11-01'},
+         {productName:"Mouse", unitPrice:300, amount: 1431, totalPrice: 524.000, casherId:8, date: '2022-11-01'},
+         {productName:"KeyBoard", unitPrice:3000, amount: 1431, totalPrice: 54.000, casherId:6, date: '2022-11-01'},
+         {productName:"Phone", unitPrice:8000, amount: 5, totalPrice: 24364.000, casherId:5,date: '2022-11-01'},
+         {productName:"HeadPhones", unitPrice:100, amount: 4314, totalPrice: 56246.000, casherId:1, date: '2022-11-01'},
+         {productName:"Monitor", unitPrice:7000, amount: 413, totalPrice: 7534.000, casherId:3, date: '2022-11-01'},
+         {productName:"WebCamera", unitPrice:500, amount: 4314, totalPrice: 575344.000, casherId:3, date: '2022-11-01'},
+         {productName:"Speaker", unitPrice:580, amount: 418, totalPrice: 58644.000, casherId:2, date: '2022-11-01'},
+         {productName:"GraphicCard", unitPrice:15608000, amount: 4, totalPrice: 586454.000, casherId:2, date: '2022-11-01'},
+         {productName:"Pencil", unitPrice:3, amount: 41414, totalPrice: 547654.000, casherId:8, date: '2022-11-01'},
+         {productName:"Eraser", unitPrice:2, amount: 41414, totalPrice:6534.000, casherId:9, date: '2022-11-01'},
+         {productName:"Ball-Pen", unitPrice:30, amount: 14314, totalPrice: 547534.000, casherId:9, date: '2022-11-01'},
+         {productName:"Sharper", unitPrice:10, amount: 18413, totalPrice: 57534.000, casherId:7, date: '2022-11-01'},
+         
+    ]
+        function sum(price){
+            let count = 0;
+            for(i=0; i < data.length; i++){
+                count += price[i].totalPrice;
+            }
+            return count
+        }
+        function amount(price){
+            let count = 0;
+            for(i=0; i < data.length; i++){
+                count += price[i].amount;
+            }
+            return count;
+        }
+
+        function firstFive(dataOne){
+            let number = 0;
+            let count = [];
+            let firstData = dataOne[1].totalPrice
+            for(i=1; i < data.length; i++){
+                if(firstData < dataOne[i].totalPrice){
+                    firstData = dataOne[i].totalPrice;
+                    
+                    count += dataOne[i].productName + ',';
+                        number = dataOne[i].totalPrice
+                    
+                    
+                }
+                
+
+            }
+            return count.slice(20,-1);
+            
+        }
+
+        function firstFiveAmount(dataTwo){
+            let count = [];
+            let firstData = dataTwo[1].amount
+            for(i=1; i < data.length; i++){
+                if(firstData < dataTwo[i].amount){
+                    firstData = dataTwo[i].amount;
+                    if(count.length = 1 ){
+                        count += dataTwo[i].productName + ',';
+                    }
+                    
+                }
+                
+
+            }
+            return count.slice(17,-1);
+        }
+        function lastFive(dataThree){
+            let count = [];
+            let firstData = dataThree[1].totalPrice
+            for(i=1; i < data.length; i++){
+                if(firstData > dataThree[i].totalPrice){
+                    firstData += dataThree[i].totalPrice;
+                    if(count.length = 1 ){
+                        count += dataThree[i].productName + ',';
+                    }
+                    
+                }
+                
+
+            }
+            return count;
+        }
+
+        function lastFiveAmount(dataFour){
+            let count = [];
+            let firstData = dataFour[1].amount
+            for(i=1; i < data.length; i++){
+                if(firstData > dataFour[i].amount){
+                    firstData += dataFour[i].amount;
+                    if(count.length = 1 ){
+                        count += dataFour[i].productName + ',';
+                    }
+                    
+                }
+                
+
+            }
+            return count;
+        }
+
+        let h = lastFiveAmount(data)
+        let k = lastFive(data);
+        let f = firstFiveAmount(data);
+        let c = firstFive(data);
+        let x = sum(data);
+        let y = amount(data);
+    console.log("Нийт борлуулалтын дүн" + ": " + x);
+    console.log("Нийт борлуулагдсан барааны тоо" + ": " +y);
+    console.log(c);
+    console.log(f);
+    console.log(k);
+    console.log(h);
+
+
+
+
+        let sumA = [];
+        for(i = 0; i < data.length; i++){
+            sumA.push(data[i].amount)
+        }
+
+        const sum_sort = sumA.sort(function(a,b){
+            if(a>b) return 1;
+            if(a<b) return -1;
+        });
+        
+        
+        const lastFiveAmountA = sum_sort.slice(-5)
+        const firstFiveAmountA = sum_sort.slice(0,5);
+        let AmountSum = 0;
+        let AmountSuma = 0;
+
+        
+
+        for(i=0; i < lastFiveAmountA.length; i++){
+            AmountSum += lastFiveAmountA[i]
+        }
+        for(i=0; i < firstFiveAmountA.length; i++){
+            AmountSuma += firstFiveAmountA[i]
+        }
+        
+        console.log("Хамгийн их зарагдсан 5 бараа /боруулалтын тоо хэмжээгээр/ " + " " +(AmountSum * 100)/ y +  '%' + " " + "боруулалтанд эзлэх хувь" );
+        console.log("Хамгийн бага зарагдсан 5 бараа /боруулалтын тоо хэмжээгээр/ " + " " + (AmountSuma * 100) / y +  '%' + " " + "боруулалтанд эзлэх хувь");
+
+
+        let sumAA = [];
+        for(i = 0; i < data.length; i++){
+            sumAA.push(data[i].totalPrice)
+        }
+        
+        const summ_sort = sumAA.sort(function(a,b){
+            if(a>b) return 1;
+            if(a<b) return -1;
+        });
+
+        
+        const lastFiveunitPricetA = summ_sort.slice(-5)
+        const firstFiveunitPriceA = summ_sort.slice(0,5);
+
+        
+        let unitPriceSum = 0;
+        let unitPriceSuma = 0;
+
+        for(i=0; i < lastFiveunitPricetA.length; i++){
+            unitPriceSum += lastFiveunitPricetA[i]
+        }
+        for(i=0; i < firstFiveunitPriceA.length; i++){
+            unitPriceSuma += firstFiveunitPriceA[i]
+        }
+
+        
+
+        console.log("Хамгийн их зарагдсан 5 бараа /боруулалтын үнийн дүнгээр/ " + " " +(unitPriceSum * 100)/ x +  '%' + " " + "боруулалтанд эзлэх хувь" );
+        console.log("Хамгийн бага зарагдсан 5 бараа /боруулалтын үнийн дүнгээр/ " + " " + (unitPriceSuma * 100) / x +  '%' + " " + "боруулалтанд эзлэх хувь");
+    </script>
+</body>
+</html>
