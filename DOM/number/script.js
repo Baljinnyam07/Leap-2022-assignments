@@ -2,7 +2,6 @@ let n =Math.floor(Math.random() * 20) + 1;
 const guess = document.querySelector('.guess');
 const body = document.querySelector('body')
 const message = document.querySelector(".message")
-// const score = Number(document.querySelector('.score').innerHTML)
 const checker = document.querySelector('.check');
 const again = document.querySelector(".again");
 
@@ -11,15 +10,12 @@ let highscore = 0;
 
 console.log(n);
 
-console.log(score)
-
-
  checker.addEventListener('click', () => {
     
     if(guess.value < 1 || guess.value > 20){
         message.innerHTML = "тоо оруулна уу";
     }
-
+    
     if(guess.value < n){
         message.innerHTML = "Бага байна";
         score--;
