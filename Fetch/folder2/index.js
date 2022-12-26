@@ -137,3 +137,9 @@ async function getMenus() {
 }
 
 getMenus();
+
+fetch('https://dummyjson.com/products/1%27')
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+
+
