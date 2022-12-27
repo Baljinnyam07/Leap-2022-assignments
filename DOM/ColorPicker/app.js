@@ -21,6 +21,7 @@ for(i = 1; i < 6; i++){
     function colorBtn(){
         img.style.zIndex =`${i}`
         i++
+        console.log(`${i}`)
     }
     const img = document.createElement('img')
     img.setAttribute('src', `./img/T-shirt_${i}.jpg`)
