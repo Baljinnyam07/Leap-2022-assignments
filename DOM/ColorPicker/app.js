@@ -9,7 +9,6 @@ const colors = [" ",'white', 'red', 'green', 'blue', 'black']
 for(i = 1; i < 6; i++){
     const btn = document.createElement('button')
     btn.style.background = colors[i]
-    btn.setAttribute("class", `classbtn${i}`)
     btn.style.marginTop = '350px'
     btn.style.marginRight = '5px'
     btn.style.width = '77px'
