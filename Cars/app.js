@@ -83,10 +83,13 @@ const deleteCar =  (id) =>{
         body: JSON.stringify({id}),
     })
     .then((res) => res.json())
-    .catch((err) =>{
+    .then((err) =>{
         alert('Амжилттай устгалаа...');
         getCarsHtml();
-    });
+    })
+    .catch((res) =>{
+        console.warn(err)
+    })
     }
         
 };
